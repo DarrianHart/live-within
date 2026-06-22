@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live Within</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Live Within</h1>
+    <p class="tagline">Living within your means — find the best your area has to offer, for what you want to spend.</p>
+  </header>
+
+  <main>
+    <form id="search-form">
+      <div class="field">
+        <label for="city">Your area</label>
+        <input type="text" id="city" placeholder="e.g. Richmond, VA" value="Richmond, VA">
+      </div>
+
+      <div class="field">
+        <label for="category">What are you budgeting for?</label>
+        <select id="category">
+          <option value="groceries">Groceries</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="diningOut">Dining out</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="period">Budget period</label>
+        <select id="period">
+          <option value="daily">Daily</option>
+          <option value="weekly" selected>Weekly</option>
+          <option value="weekend">Weekend</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="budget">Your budget ($)</label>
+        <input type="number" id="budget" min="0" step="1" placeholder="e.g. 50" value="50">
+      </div>
+
+      <button type="submit">Find options</button>
+    </form>
+
+    <section id="results"></section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
