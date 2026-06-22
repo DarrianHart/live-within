@@ -107,6 +107,11 @@ button:hover { background: #265a42; }
   gap: 1rem;
 }
 
+.result-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
 .result-card.over-budget {
   opacity: 0.65;
 }
@@ -212,5 +217,16 @@ button:hover { background: #265a42; }
 @media (max-width: 640px) {
   #search-form {
     grid-template-columns: 1fr;
+  }
+
+  .result-card {
+    flex-direction: column;
+  }
+
+  .result-cost {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
   }
 }
