@@ -2,6 +2,8 @@
 // To add a new city, add a new key under `cities` following the same shape.
 
 const LIVE_WITHIN_DATA = {
+  // Bump this whenever store/venue data or weekly deals are refreshed.
+  lastUpdated: "2026-06-24",
   cities: {
     "richmond, va": {
       displayName: "Richmond, VA",
