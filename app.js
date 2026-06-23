@@ -144,6 +144,8 @@ form.addEventListener("submit", (e) => {
   readFormAndRender();
 });
 
+document.getElementById("city").addEventListener("change", readFormAndRender);
+
 document.getElementById("data-updated").textContent =
   `Store and venue data last refreshed ${LIVE_WITHIN_DATA.lastUpdated}.`;
 
