@@ -7,6 +7,7 @@ const LIVE_WITHIN_DATA = {
   cities: {
     "richmond, va": {
       displayName: "Richmond, VA",
+      photo: "assets/richmond-skyline-night.jpg",
       categories: {
         groceries: [
           {
@@ -128,6 +129,7 @@ const LIVE_WITHIN_DATA = {
 
     "henrico, va": {
       displayName: "Henrico, VA",
+      photo: "assets/richmond-skyline-night.jpg",
       categories: {
         groceries: [
           { name: "Aldi (W Broad St)", area: "West Henrico", typicalWeeklyCost: 50, notes: "Lowest base prices for pantry staples and produce." },
@@ -170,6 +172,114 @@ const LIVE_WITHIN_DATA = {
         ],
         diningOut: [
           { name: "Food trucks at Innsbrook (seasonal)", area: "Innsbrook", typicalCost: 10, notes: "Rotating affordable food trucks during warmer months." }
+        ]
+      }
+    },
+
+    "boston, ma": {
+      displayName: "Boston, MA",
+      photo: null,
+      categories: {
+        groceries: [
+          { name: "Aldi (multiple Boston locations)", area: "Citywide", typicalWeeklyCost: 50, notes: "Rated lowest average prices in Greater Boston — about 28% below the all-store average." },
+          { name: "Market Basket (closest locations just outside city line)", area: "Greater Boston", typicalWeeklyCost: 55, notes: "Consistently rated cheapest traditional supermarket chain in the area, ~15% below average." },
+          { name: "Trader Joe's (multiple Boston locations)", area: "Citywide", typicalWeeklyCost: 65, notes: "Similar pricing to Shaw's, slightly below Stop & Shop; rated highest for quality." },
+          { name: "Stop & Shop (multiple Boston locations)", area: "Citywide", typicalWeeklyCost: 70, notes: "Mid-range pricing; loyalty card discounts help offset cost." },
+          { name: "Shaw's (multiple Boston locations)", area: "Citywide", typicalWeeklyCost: 70, notes: "Mid-range pricing, similar to Trader Joe's on most staples." }
+        ],
+        entertainment: [
+          { name: "Harvard Art Museums", area: "Harvard Square (Boston/Cambridge border)", typicalCost: 0, notes: "Free admission every day of the week." },
+          { name: "MIT List Visual Arts Center", area: "Kendall Square", typicalCost: 0, notes: "Always-free contemporary art museum." },
+          { name: "USS Constitution", area: "Charlestown", typicalCost: 0, notes: "Free admission year-round; oldest commissioned warship still afloat." },
+          { name: "Freedom Trail", area: "Downtown / North End", typicalCost: 0, notes: "Free self-guided 2.5-mile walk through 16 historic sites." },
+          { name: "Hatch Shell Concerts", area: "Esplanade", typicalCost: 0, notes: "Free outdoor concerts and movie nights along the Charles River, warmer months." },
+          { name: "Shakespeare on the Common", area: "Boston Common", typicalCost: 0, notes: "Free outdoor Shakespeare performances in summer." },
+          {
+            name: "Museum of Fine Arts (MFA)",
+            area: "Fenway",
+            typicalCost: 25,
+            notes: "General admission; special exhibits cost more.",
+            studentTip: "Free for full-time students with valid ID, including MIT undergrad/grad students via the University Membership Program."
+          },
+          {
+            name: "Institute of Contemporary Art (ICA)",
+            area: "Seaport",
+            typicalCost: 10,
+            notes: "Waterfront contemporary art museum.",
+            studentTip: "Free admission Thursdays 5-9pm; $10 student rate other times."
+          },
+          { name: "MIT Museum", area: "Kendall Square", typicalCost: 5, notes: "Hands-on science and tech exhibits.", studentTip: "Free Sundays 10am-noon and the second Friday of each month 5-8pm; $5 student rate otherwise." },
+          { name: "Boston Children's Museum", area: "Fort Point", typicalCost: 1, notes: "$1 entry Sunday afternoons 1-4pm with advance reservation." }
+        ],
+        diningOut: [
+          { name: "Bleacher Bar", area: "Fenway", typicalCost: 15, notes: "Bar/grill near Fenway Park.", studentTip: "15% off food with valid student ID." },
+          { name: "Caffè Nero (multiple locations)", area: "Citywide", typicalCost: 6, notes: "Coffee shop chain.", studentTip: "20% off drinks for students via their app." },
+          { name: "Food trucks at City Hall Plaza", area: "Downtown", typicalCost: 10, notes: "Rotating affordable food trucks on weekdays." }
+        ]
+      }
+    },
+
+    "cambridge, ma": {
+      displayName: "Cambridge, MA",
+      photo: null,
+      categories: {
+        groceries: [
+          { name: "Trader Joe's (Memorial Drive)", area: "Riverside", typicalWeeklyCost: 60, notes: "Along the Charles River; consistently good value and quality." },
+          { name: "Trader Joe's (Fresh Pond Pkwy)", area: "Fresh Pond", typicalWeeklyCost: 60, notes: "Second Cambridge location, near Fresh Pond." },
+          { name: "Star Market (White St, pickup)", area: "Porter Square area", typicalWeeklyCost: 65, notes: "Grocery pickup available; mid-range pricing." },
+          { name: "Star Market (Porter Square Mall)", area: "Porter Square", typicalWeeklyCost: 65, notes: "Mid-range pricing, convenient T access." },
+          { name: "Market Basket (Union Square, Somerville border)", area: "Near Union Square", typicalWeeklyCost: 50, notes: "One of the only true discount supermarkets accessible to Cambridge residents — lowest prices in the area, e.g. milk as low as $2.59." }
+        ],
+        entertainment: [
+          { name: "Harvard Square wandering / street performers", area: "Harvard Square", typicalCost: 0, notes: "Free people-watching, bookstores, boutiques, and street performances." },
+          { name: "Harvard campus guided tours", area: "Harvard Square", typicalCost: 0, notes: "Free guided tours covering campus history." },
+          { name: "Harvard Art Museums", area: "Harvard Square", typicalCost: 0, notes: "Free admission every day." },
+          { name: "Harvard Semitic Museum", area: "Harvard Square", typicalCost: 0, notes: "40,000+ Near Eastern artifacts — pottery, seals, sculpture, tablets." },
+          { name: "MIT List Visual Arts Center", area: "Kendall Square", typicalCost: 0, notes: "Always-free contemporary art museum." },
+          {
+            name: "American Repertory Theater",
+            area: "Harvard Square",
+            typicalCost: 20,
+            notes: "Professional theater at the Loeb Drama Center.",
+            studentTip: "Same-day rush tickets $20, no fees, in-person only at the box office."
+          },
+          { name: "MIT Museum", area: "Kendall Square", typicalCost: 5, notes: "Hands-on science and tech exhibits.", studentTip: "Free Sundays 10am-noon and the second Friday of each month 5-8pm." }
+        ],
+        diningOut: [
+          { name: "Caffè Nero (Harvard Square)", area: "Harvard Square", typicalCost: 6, notes: "Coffee shop.", studentTip: "20% off drinks for students via their app." },
+          { name: "Loretta's Last Call", area: "Central Square", typicalCost: 10, notes: "Bar food.", studentTip: "50% off appetizers Mon-Thu, 2-7pm, with valid student ID." }
+        ]
+      }
+    },
+
+    "somerville, ma": {
+      displayName: "Somerville, MA",
+      photo: null,
+      categories: {
+        groceries: [
+          { name: "Market Basket (Union Square)", area: "Union Square", typicalWeeklyCost: 50, notes: "Lowest prices in the Cambridge/Somerville area — 'More for Your Dollar.'" },
+          { name: "Trader Joe's (Somerville)", area: "Assembly Row area", typicalWeeklyCost: 60, notes: "Good value and quality, especially on prepared foods and snacks." },
+          { name: "Star Market (Beacon St)", area: "Beacon Street", typicalWeeklyCost: 65, notes: "Mid-range pricing, convenient for Davis/Porter Square area." }
+        ],
+        entertainment: [
+          {
+            name: "Somerville Theatre",
+            area: "Davis Square",
+            typicalCost: 12,
+            notes: "Independent theater and concert venue — movies, live events, and the Museum of Bad Art.",
+            studentTip: "Watch for student-priced matinee showings."
+          },
+          { name: "Tufts campus events (Tufts University Social Collective)", area: "Davis Square / Tufts campus", typicalCost: 0, notes: "Free or low-cost student events and activities open around campus." },
+          {
+            name: "Coolidge Corner Theatre",
+            area: "Near Somerville/Brookline",
+            typicalCost: 25,
+            notes: "Independent cinema.",
+            studentTip: "All performances $25 flat for full-time students with valid ID, promo code DISCOUNT."
+          }
+        ],
+        diningOut: [
+          { name: "Davis Square food spots (rotating cheap eats)", area: "Davis Square", typicalCost: 10, notes: "Dense cluster of affordable restaurants near the Tufts/Davis T stop." }
         ]
       }
     }

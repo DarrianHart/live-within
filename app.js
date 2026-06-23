@@ -41,9 +41,23 @@ function findCity(cityInput) {
   return LIVE_WITHIN_DATA.cities[key] || null;
 }
 
+function updateHeaderPhoto(city) {
+  const header = document.querySelector("header");
+  const credit = document.getElementById("photo-credit-text");
+  if (city && city.photo) {
+    header.classList.remove("no-photo");
+    header.style.setProperty("--header-photo", `url("${city.photo}")`);
+    credit.textContent = `${city.displayName} skyline photo via Unsplash`;
+  } else {
+    header.classList.add("no-photo");
+    header.style.removeProperty("--header-photo");
+  }
+}
+
 function render(cityInput, category, period, budget) {
   const city = findCity(cityInput);
   const items = city ? (city.categories[category] || []) : [];
+  updateHeaderPhoto(city);
 
   if (!city) {
     const available = Object.values(LIVE_WITHIN_DATA.cities).map(c => c.displayName).join(", ");
