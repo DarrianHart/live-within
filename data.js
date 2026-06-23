@@ -223,7 +223,8 @@ const LIVE_WITHIN_DATA = {
 
     "cambridge, ma": {
       displayName: "Cambridge, MA",
-      photo: null,
+      photo: "assets/boston-skyline.jpg",
+      photoCredit: "Boston, MA skyline photo",
       categories: {
         groceries: [
           { name: "Trader Joe's (Memorial Drive)", area: "Riverside", typicalWeeklyCost: 60, notes: "Along the Charles River; consistently good value and quality." },
@@ -256,7 +257,8 @@ const LIVE_WITHIN_DATA = {
 
     "somerville, ma": {
       displayName: "Somerville, MA",
-      photo: null,
+      photo: "assets/boston-skyline.jpg",
+      photoCredit: "Boston, MA skyline photo",
       categories: {
         groceries: [
           { name: "Market Basket (Union Square)", area: "Union Square", typicalWeeklyCost: 50, notes: "Lowest prices in the Cambridge/Somerville area — 'More for Your Dollar.'" },
