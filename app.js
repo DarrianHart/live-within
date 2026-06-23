@@ -36,9 +36,17 @@ function costLabel(cost, category) {
   return category === "groceries" ? `~$${rounded}` : `~$${rounded}`;
 }
 
-function findCity(cityInput) {
-  const key = cityInput.trim().toLowerCase();
-  return LIVE_WITHIN_DATA.cities[key] || null;
+function findCity(cityKey) {
+  return LIVE_WITHIN_DATA.cities[cityKey] || null;
+}
+
+function populateCityDropdown() {
+  const select = document.getElementById("city");
+  const entries = Object.entries(LIVE_WITHIN_DATA.cities)
+    .sort((a, b) => a[1].displayName.localeCompare(b[1].displayName));
+  select.innerHTML = entries
+    .map(([key, city]) => `<option value="${escapeHtml(key)}">${escapeHtml(city.displayName)}</option>`)
+    .join("");
 }
 
 function updateHeaderPhoto(city) {
@@ -124,7 +132,7 @@ function escapeHtml(str) {
 }
 
 function readFormAndRender() {
-  const city = document.getElementById("city").value || "Richmond, VA";
+  const city = document.getElementById("city").value;
   const category = document.getElementById("category").value;
   const period = document.getElementById("period").value;
   const budget = Number(document.getElementById("budget").value) || 0;
@@ -139,4 +147,5 @@ form.addEventListener("submit", (e) => {
 document.getElementById("data-updated").textContent =
   `Store and venue data last refreshed ${LIVE_WITHIN_DATA.lastUpdated}.`;
 
+populateCityDropdown();
 readFormAndRender();

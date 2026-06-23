@@ -184,9 +184,45 @@ const LIVE_WITHIN_DATA = {
       categories: {
         groceries: [
           { name: "Aldi (multiple Boston locations)", area: "Citywide", typicalWeeklyCost: 50, notes: "Rated lowest average prices in Greater Boston — about 28% below the all-store average." },
-          { name: "Market Basket (closest locations just outside city line)", area: "Greater Boston", typicalWeeklyCost: 55, notes: "Consistently rated cheapest traditional supermarket chain in the area, ~15% below average." },
-          { name: "Trader Joe's (multiple Boston locations)", area: "Citywide", typicalWeeklyCost: 65, notes: "Similar pricing to Shaw's, slightly below Stop & Shop; rated highest for quality." },
-          { name: "Stop & Shop (multiple Boston locations)", area: "Citywide", typicalWeeklyCost: 70, notes: "Mid-range pricing; loyalty card discounts help offset cost." },
+          {
+            name: "Market Basket (closest locations just outside city line)",
+            area: "Greater Boston",
+            typicalWeeklyCost: 55,
+            notes: "Consistently rated cheapest traditional supermarket chain in the area, ~15% below average.",
+            deals: [
+              "Meat & seafood deals on tenderloin, steak tips, bacon, and pork ribs",
+              "Summer produce headlined by watermelon, tomatoes, peaches, and specialty grapes",
+              "Pantry stock-up deals on tuna, dressing, boxed sides, cereal, and grilling seasonings"
+            ],
+            dealsUpdated: "2026-06-24",
+            dealsNote: "Deals change weekly — check shopmarketbasket.com/weekly-flyer for your exact location."
+          },
+          {
+            name: "Trader Joe's (multiple Boston locations)",
+            area: "Citywide",
+            typicalWeeklyCost: 65,
+            notes: "Similar pricing to Shaw's, slightly below Stop & Shop; rated highest for quality.",
+            deals: [
+              "No traditional BOGO/weekly-ad system — prices are everyday-low instead",
+              "Rotating seasonal items worth watching: Garlic Butter Irish Potato Chips, Sparkling Lemonade, Hot Honey Mustard ($1.99)",
+              "Mini Strawberry Sheet Cakes ($5.99) available through August"
+            ],
+            dealsUpdated: "2026-06-24",
+            dealsNote: "Trader Joe's doesn't run weekly sales — check traderjoes.com for current seasonal items."
+          },
+          {
+            name: "Stop & Shop (multiple Boston locations)",
+            area: "Citywide",
+            typicalWeeklyCost: 70,
+            notes: "Mid-range pricing; loyalty card discounts help offset cost.",
+            deals: [
+              "Chicken breast $2.99/lb, salmon fillets $8.99/lb, steak BOGO",
+              "Perdue drumsticks or thighs $1.79/lb",
+              "Blueberries $1.99, loose corn 3 for $1, peppers 99 cents"
+            ],
+            dealsUpdated: "2026-06-24",
+            dealsNote: "Deals vary by location — check stopandshop.com/savings/weekly-ad for your exact store."
+          },
           { name: "Shaw's (multiple Boston locations)", area: "Citywide", typicalWeeklyCost: 70, notes: "Mid-range pricing, similar to Trader Joe's on most staples." }
         ],
         entertainment: [
@@ -227,11 +263,34 @@ const LIVE_WITHIN_DATA = {
       photoCredit: "Boston, MA skyline photo",
       categories: {
         groceries: [
-          { name: "Trader Joe's (Memorial Drive)", area: "Riverside", typicalWeeklyCost: 60, notes: "Along the Charles River; consistently good value and quality." },
+          {
+            name: "Trader Joe's (Memorial Drive)",
+            area: "Riverside",
+            typicalWeeklyCost: 60,
+            notes: "Along the Charles River; consistently good value and quality.",
+            deals: [
+              "No traditional BOGO/weekly-ad system — prices are everyday-low instead",
+              "Rotating seasonal items worth watching: Garlic Butter Irish Potato Chips, Sparkling Lemonade, Hot Honey Mustard ($1.99)"
+            ],
+            dealsUpdated: "2026-06-24",
+            dealsNote: "Trader Joe's doesn't run weekly sales — check traderjoes.com for current seasonal items."
+          },
           { name: "Trader Joe's (Fresh Pond Pkwy)", area: "Fresh Pond", typicalWeeklyCost: 60, notes: "Second Cambridge location, near Fresh Pond." },
           { name: "Star Market (White St, pickup)", area: "Porter Square area", typicalWeeklyCost: 65, notes: "Grocery pickup available; mid-range pricing." },
           { name: "Star Market (Porter Square Mall)", area: "Porter Square", typicalWeeklyCost: 65, notes: "Mid-range pricing, convenient T access." },
-          { name: "Market Basket (Union Square, Somerville border)", area: "Near Union Square", typicalWeeklyCost: 50, notes: "One of the only true discount supermarkets accessible to Cambridge residents — lowest prices in the area, e.g. milk as low as $2.59." }
+          {
+            name: "Market Basket (Union Square, Somerville border)",
+            area: "Near Union Square",
+            typicalWeeklyCost: 50,
+            notes: "One of the only true discount supermarkets accessible to Cambridge residents — lowest prices in the area, e.g. milk as low as $2.59.",
+            deals: [
+              "Meat & seafood deals on tenderloin, steak tips, bacon, and pork ribs",
+              "Summer produce headlined by watermelon, tomatoes, peaches, and specialty grapes",
+              "Pantry stock-up deals on tuna, dressing, boxed sides, cereal, and grilling seasonings"
+            ],
+            dealsUpdated: "2026-06-24",
+            dealsNote: "Deals change weekly — check shopmarketbasket.com/weekly-flyer for your exact location."
+          }
         ],
         entertainment: [
           { name: "Harvard Square wandering / street performers", area: "Harvard Square", typicalCost: 0, notes: "Free people-watching, bookstores, boutiques, and street performances." },
@@ -261,8 +320,31 @@ const LIVE_WITHIN_DATA = {
       photoCredit: "Boston, MA skyline photo",
       categories: {
         groceries: [
-          { name: "Market Basket (Union Square)", area: "Union Square", typicalWeeklyCost: 50, notes: "Lowest prices in the Cambridge/Somerville area — 'More for Your Dollar.'" },
-          { name: "Trader Joe's (Somerville)", area: "Assembly Row area", typicalWeeklyCost: 60, notes: "Good value and quality, especially on prepared foods and snacks." },
+          {
+            name: "Market Basket (Union Square)",
+            area: "Union Square",
+            typicalWeeklyCost: 50,
+            notes: "Lowest prices in the Cambridge/Somerville area — 'More for Your Dollar.'",
+            deals: [
+              "Meat & seafood deals on tenderloin, steak tips, bacon, and pork ribs",
+              "Summer produce headlined by watermelon, tomatoes, peaches, and specialty grapes",
+              "Pantry stock-up deals on tuna, dressing, boxed sides, cereal, and grilling seasonings"
+            ],
+            dealsUpdated: "2026-06-24",
+            dealsNote: "Deals change weekly — check shopmarketbasket.com/weekly-flyer for your exact location."
+          },
+          {
+            name: "Trader Joe's (Somerville)",
+            area: "Assembly Row area",
+            typicalWeeklyCost: 60,
+            notes: "Good value and quality, especially on prepared foods and snacks.",
+            deals: [
+              "No traditional BOGO/weekly-ad system — prices are everyday-low instead",
+              "Rotating seasonal items worth watching: Garlic Butter Irish Potato Chips, Sparkling Lemonade, Hot Honey Mustard ($1.99)"
+            ],
+            dealsUpdated: "2026-06-24",
+            dealsNote: "Trader Joe's doesn't run weekly sales — check traderjoes.com for current seasonal items."
+          },
           { name: "Star Market (Beacon St)", area: "Beacon Street", typicalWeeklyCost: 65, notes: "Mid-range pricing, convenient for Davis/Porter Square area." }
         ],
         entertainment: [
