@@ -8,6 +8,7 @@ const LIVE_WITHIN_DATA = {
     "richmond, va": {
       displayName: "Richmond, VA",
       photo: "assets/richmond-skyline-night.jpg",
+      photoCredit: "Richmond, VA skyline photo via Unsplash",
       categories: {
         groceries: [
           {
@@ -178,7 +179,8 @@ const LIVE_WITHIN_DATA = {
 
     "boston, ma": {
       displayName: "Boston, MA",
-      photo: null,
+      photo: "assets/boston-skyline.jpg",
+      photoCredit: "Boston, MA skyline photo",
       categories: {
         groceries: [
           { name: "Aldi (multiple Boston locations)", area: "Citywide", typicalWeeklyCost: 50, notes: "Rated lowest average prices in Greater Boston — about 28% below the all-store average." },

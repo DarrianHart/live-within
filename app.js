@@ -47,7 +47,7 @@ function updateHeaderPhoto(city) {
   if (city && city.photo) {
     header.classList.remove("no-photo");
     header.style.setProperty("--header-photo", `url("${city.photo}")`);
-    credit.textContent = `${city.displayName} skyline photo via Unsplash`;
+    credit.textContent = city.photoCredit || `${city.displayName} skyline photo`;
   } else {
     header.classList.add("no-photo");
     header.style.removeProperty("--header-photo");
