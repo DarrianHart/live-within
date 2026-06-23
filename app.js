@@ -4,7 +4,8 @@ const resultsEl = document.getElementById("results");
 const CATEGORY_LABELS = {
   groceries: "groceries",
   entertainment: "entertainment",
-  diningOut: "dining out"
+  diningOut: "dining out",
+  shopping: "shopping"
 };
 
 const PERIOD_LABELS = {

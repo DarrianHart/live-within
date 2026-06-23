@@ -124,6 +124,17 @@ const LIVE_WITHIN_DATA = {
           { name: "Dot's Back Inn", area: "Forest Hill", typicalCost: 12, notes: "Classic diner comfort food, generous portions." },
           { name: "Lunch food trucks at Brown's Island", area: "Downtown", typicalCost: 10, notes: "Rotating affordable food trucks, especially Fridays in summer." },
           { name: "3 Monkeys Southside Grill", area: "South Side", typicalCost: 11, notes: "Budget-friendly daily specials." }
+        ],
+        shopping: [
+          { name: "Fan Tastic Thrift", area: "The Fan", typicalCost: 3, notes: "T-shirts as cheap as $0.99, sweaters around $2.98 — one of the cheapest thrift options in the city." },
+          { name: "Liberation Thrift", area: "South Side", typicalCost: 6, notes: "One of the largest secondhand outlets in Richmond — clothes, furniture, electronics, housewares." },
+          { name: "Hope Thrift", area: "Tuckahoe / Bellgrade", typicalCost: 6, notes: "Multiple locations, extensive inventory of furniture, clothing, vintage pieces, and home goods." },
+          { name: "Buffalo Exchange", area: "Carytown", typicalCost: 12, notes: "Trendy and vintage resale — buy, sell, or trade clothing." },
+          { name: "Clothes Rack", area: "Carytown", typicalCost: 10, notes: "Curated secondhand clothing, accessories, and home decor at affordable prices." },
+          { name: "Clementine", area: "Carytown", typicalCost: 20, notes: "Pre-loved women's contemporary and designer fashion, more than 50% off retail." },
+          { name: "It's Chic Again", area: "Carytown", typicalCost: 25, notes: "Upscale consignment — up to 80% off designer brands like Dior, Louis Vuitton, Ralph Lauren." },
+          { name: "Jefferson Davis Flea Market", area: "South Side", typicalCost: 5, notes: "100+ vendors selling clothes, jewelry, cookware, and more. Open Fri-Sun." },
+          { name: "The Diamond Flea Market", area: "North Side", typicalCost: 5, notes: "Free-to-attend monthly market (May-Oct) with local and national vendors." }
         ]
       }
     },
@@ -173,6 +184,14 @@ const LIVE_WITHIN_DATA = {
         ],
         diningOut: [
           { name: "Food trucks at Innsbrook (seasonal)", area: "Innsbrook", typicalCost: 10, notes: "Rotating affordable food trucks during warmer months." }
+        ],
+        shopping: [
+          { name: "Goodwill (Tom Leonard Dr)", area: "Glen Allen", typicalCost: 6, notes: "Large Goodwill of Central and Coastal Virginia location." },
+          { name: "Goodwill (Virginia Center Commons)", area: "Glen Allen", typicalCost: 6, notes: "Second Goodwill location near Virginia Center Commons." },
+          { name: "West End Thrift Store", area: "West End", typicalCost: 8, notes: "Local consignment-oriented thrift shop with a loyal following." },
+          { name: "Macy's Backstage", area: "Short Pump Town Center", typicalCost: 15, notes: "Outlet/clearance arm of Macy's inside Short Pump Town Center." },
+          { name: "Short Pump Town Center", area: "Short Pump", typicalCost: 30, notes: "140+ stores; mainstream mall pricing, but anchor-store clearance racks (Dillard's, Macy's, Nordstrom Rack) can be affordable." },
+          { name: "GreenGate Shopping Center", area: "Short Pump", typicalCost: 25, notes: "Upscale shopping and dining center near Short Pump." }
         ]
       }
     },
@@ -253,6 +272,18 @@ const LIVE_WITHIN_DATA = {
           { name: "Bleacher Bar", area: "Fenway", typicalCost: 15, notes: "Bar/grill near Fenway Park.", studentTip: "15% off food with valid student ID." },
           { name: "Caffè Nero (multiple locations)", area: "Citywide", typicalCost: 6, notes: "Coffee shop chain.", studentTip: "20% off drinks for students via their app." },
           { name: "Food trucks at City Hall Plaza", area: "Downtown", typicalCost: 10, notes: "Rotating affordable food trucks on weekdays." }
+        ],
+        shopping: [
+          {
+            name: "Goodwill (Commonwealth Ave)",
+            area: "Allston / BU campus area",
+            typicalCost: 6,
+            notes: "Sits in the heart of Boston's student district near BU. Dresses from $7.99, women's short-sleeve shirts $4.99.",
+            studentTip: "College students get 15% off every Thursday with valid ID."
+          },
+          { name: "Downtown Crossing", area: "Downtown", typicalCost: 15, notes: "Discount shopping district — TJ Maxx, Marshalls, Primark, and more clustered together." },
+          { name: "Allston-Brighton thrift circuit", area: "Allston / Brighton", typicalCost: 5, notes: "Dense cluster of thrift and secondhand shops.", studentTip: "Late May through mid-June (college move-out season) is when thrift stores fill up with nearly-new donations — best time to shop." },
+          { name: "Prudential Center", area: "Back Bay", typicalCost: 30, notes: "Mainstream mall; watch for clearance racks and seasonal sales for affordable finds." }
         ]
       }
     },
@@ -310,6 +341,12 @@ const LIVE_WITHIN_DATA = {
         diningOut: [
           { name: "Caffè Nero (Harvard Square)", area: "Harvard Square", typicalCost: 6, notes: "Coffee shop.", studentTip: "20% off drinks for students via their app." },
           { name: "Loretta's Last Call", area: "Central Square", typicalCost: 10, notes: "Bar food.", studentTip: "50% off appetizers Mon-Thu, 2-7pm, with valid student ID." }
+        ],
+        shopping: [
+          { name: "The Garment District", area: "Kendall Square", typicalCost: 2, notes: "Large clothing store with curated racks upstairs and the legendary Dollar-a-Pound bins in the basement.", studentTip: "Short walk from Kendall/MIT Red Line T station — a favorite for budget-conscious MIT/Harvard students." },
+          { name: "Goodwill (Cambridge)", area: "Cambridge", typicalCost: 6, notes: "Consistently rated as having some of the best prices around." },
+          { name: "Boomerangs (Central Square)", area: "Central Square", typicalCost: 8, notes: "Thrift shop with strong overall price/style balance; proceeds support HIV/AIDS services." },
+          { name: "CambridgeSide Galleria", area: "East Cambridge", typicalCost: 25, notes: "Mainstream mall; check clearance sections for affordable finds." }
         ]
       }
     },
@@ -366,6 +403,12 @@ const LIVE_WITHIN_DATA = {
         ],
         diningOut: [
           { name: "Davis Square food spots (rotating cheap eats)", area: "Davis Square", typicalCost: 10, notes: "Dense cluster of affordable restaurants near the Tufts/Davis T stop." }
+        ],
+        shopping: [
+          { name: "High Energy Vintage", area: "Davis Square", typicalCost: 15, notes: "Vintage clothing dating back to the 1940s." },
+          { name: "Blue Bandana Relics", area: "Bow Market", typicalCost: 12, notes: "Curated menswear, industrial antiques, and Americana inside Bow Market." },
+          { name: "Goodwill (Somerville area)", area: "Somerville / Davis Square", typicalCost: 6, notes: "Same Goodwill network as Boston/Cambridge — affordable secondhand clothing." },
+          { name: "Assembly Row", area: "Assembly Square", typicalCost: 25, notes: "Open-air shopping center; check clearance racks at anchor stores for affordable finds." }
         ]
       }
     }
