@@ -8,6 +8,16 @@
   --border: #e1e6e2;
 }
 
+[data-theme="dark"] {
+  --green: #4caf80;
+  --green-light: #1a3328;
+  --ink: #e8f0eb;
+  --muted: #8faa98;
+  --bg: #121a15;
+  --card: #1d2b22;
+  --border: #2e4035;
+}
+
 * { box-sizing: border-box; }
 
 body {
@@ -259,6 +269,55 @@ footer p {
 
 footer a {
   color: var(--green);
+}
+
+#theme-toggle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  line-height: 1;
+  backdrop-filter: blur(4px);
+  transition: background 0.2s;
+}
+
+#theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.website-link {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: var(--green);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.website-link:hover {
+  text-decoration: underline;
+}
+
+[data-theme="dark"] input,
+[data-theme="dark"] select {
+  background: var(--card);
+  color: var(--ink);
+  border-color: var(--border);
+}
+
+[data-theme="dark"] button[type="submit"] {
+  background: var(--green);
+}
+
+[data-theme="dark"] .student-badge {
+  background: #3d2e00;
+  color: #f5c842;
 }
 
 @media (max-width: 640px) {

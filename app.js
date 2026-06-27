@@ -109,6 +109,11 @@ function studentTipHtml(item) {
   return `<div class="student-tip"><span class="student-badge">Student tip</span> ${escapeHtml(item.studentTip)}</div>`;
 }
 
+function websiteLinkHtml(item) {
+  if (!item.website) return "";
+  return `<a class="website-link" href="${escapeHtml(item.website)}" target="_blank" rel="noopener noreferrer">Visit website ↗</a>`;
+}
+
 function cardHtml(item, cost, category, overBudget) {
   return `
     <div class="result-card ${overBudget ? "over-budget" : ""}">
@@ -118,6 +123,7 @@ function cardHtml(item, cost, category, overBudget) {
         <div class="notes">${escapeHtml(item.notes)}</div>
         ${studentTipHtml(item)}
         ${dealsHtml(item)}
+        ${websiteLinkHtml(item)}
       </div>
       <div class="result-cost">
         <div class="price ${overBudget ? "over" : ""}">${costLabel(cost, category)}</div>
@@ -139,6 +145,28 @@ function readFormAndRender() {
   const budget = Number(document.getElementById("budget").value) || 0;
   render(city, category, period, budget);
 }
+
+// Dark mode toggle
+(function () {
+  const btn = document.getElementById("theme-toggle");
+  const saved = localStorage.getItem("theme");
+  if (saved === "dark") {
+    document.documentElement.setAttribute("data-theme", "dark");
+    btn.textContent = "🌙";
+  }
+  btn.addEventListener("click", () => {
+    const isDark = document.documentElement.getAttribute("data-theme") === "dark";
+    if (isDark) {
+      document.documentElement.removeAttribute("data-theme");
+      btn.textContent = "☀️";
+      localStorage.setItem("theme", "light");
+    } else {
+      document.documentElement.setAttribute("data-theme", "dark");
+      btn.textContent = "🌙";
+      localStorage.setItem("theme", "dark");
+    }
+  });
+})();
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
