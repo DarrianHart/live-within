@@ -3,7 +3,7 @@
 
 const LIVE_WITHIN_DATA = {
   // Bump this whenever store/venue data or weekly deals are refreshed.
-  lastUpdated: "2026-06-27",
+  lastUpdated: "2026-08-12",
   cities: {
     "richmond, va": {
       displayName: "Richmond, VA",
@@ -18,12 +18,12 @@ const LIVE_WITHIN_DATA = {
             typicalWeeklyCost: 45,
             notes: "Discount grocer, strong produce/bakery deals, weekly specials flyer.",
             deals: [
-              "Ribeye, spareribs, salmon, and chicken wings featured for grilling",
-              "Peaches and blueberries as the standout summer produce deals",
-              "Tyson chicken and rising-crust pizza frozen deals",
-              "Bath tissue and paper towels discounted — good week to restock"
+              "Late-summer produce deals featuring fresh fruit and vegetables",
+              "Back-to-school season specials on snacks, breakfast items, and lunchbox staples",
+              "Meat deals including chicken and pork cuts",
+              "Household paper and cleaning products discounted this week"
             ],
-            dealsUpdated: "2026-06-27",
+            dealsUpdated: "2026-08-12",
             dealsNote: "Deals change weekly and vary by store — check lidl.com for your exact location."
           },
           {
@@ -33,11 +33,12 @@ const LIVE_WITHIN_DATA = {
             typicalWeeklyCost: 50,
             notes: "Lowest base prices in the city for pantry staples and produce.",
             deals: [
-              "Weekly 'ALDI Finds' — limited-stock seasonal specials, best shopped early Wednesday",
-              "Rotating discounts across produce, dairy, and pantry staples",
-              "No rain checks and no manufacturer coupons accepted — prices are already low"
+              "Fresh avocados and blackberries on sale this week",
+              "Chicken nuggets and sliced cheese discounted",
+              "Non-fat yogurts from as low as $0.39",
+              "New ALDI Finds arrive Wednesday — back-to-school season items this week"
             ],
-            dealsUpdated: "2026-06-27",
+            dealsUpdated: "2026-08-12",
             dealsNote: "ALDI Finds sell out fast — check aldi.us for your exact location."
           },
           {
@@ -47,11 +48,11 @@ const LIVE_WITHIN_DATA = {
             typicalWeeklyCost: 60,
             notes: "MVP card discounts stack well with weekly sales.",
             deals: [
-              "Front-page 'Hot Sale' deep discounts on chicken breast, ground beef, and soda",
-              "Dozens of BOGO deals on snacks, cereal, and pantry items",
-              "Extra digital coupons available in the Food Lion app, clipped to your MVP account"
+              "Back-to-school season: MVP card deals on snacks, lunchbox staples, and beverages",
+              "BOGO deals on snacks, cereal, and pantry items this week",
+              "Extra digital coupons in the Food Lion app — clip to your MVP card before shopping"
             ],
-            dealsUpdated: "2026-06-27",
+            dealsUpdated: "2026-08-12",
             dealsNote: "Deals vary by region and store — check foodlion.com for your exact location."
           },
           {
@@ -61,12 +62,12 @@ const LIVE_WITHIN_DATA = {
             typicalWeeklyCost: 65,
             notes: "Digital coupons + fuel points can offset cost noticeably.",
             deals: [
-              "Buy 5 or More, Save $1 Each Mega Event on groceries, snacks, and beverages",
+              "Buy 5 or More, Save $1 Each Mega Event — 3rd and final week, stock up now",
               "Buy 2, Save $10 on household, cleaning, and paper products",
               "5X Hot Weekly Digital Deals — limit 5 items per transaction, check app for specifics",
               "4X Fuel Points on select Private Selection items with a digital coupon"
             ],
-            dealsUpdated: "2026-06-27",
+            dealsUpdated: "2026-08-12",
             dealsNote: "Pricing varies by store and region — check kroger.com/weeklyad for your exact location."
           },
           {
@@ -83,16 +84,17 @@ const LIVE_WITHIN_DATA = {
             typicalWeeklyCost: 75,
             notes: "Higher base cost, but BOGO weeks can bring it close to discount-grocer pricing.",
             deals: [
-              "BOGO on Sabra Hummus, King's Hawaiian Buns, and Kraft Shredded Cheese",
-              "Gatorade 4-packs BOGO; Pepsi buy-2-get-2-free",
-              "Chicken breast BOGO; deli deals on rotisserie chicken",
-              "Doritos and General Mills cereal BOGOs"
+              "Maxwell House Ground Coffee and K-Cups BOGO Free",
+              "Sweet Baby Ray's Gourmet Sauces, Hellmann's Mayonnaise, and Smithfield Ham Steak BOGO Free",
+              "Publix Pork Loin Boneless Chops BOGO Free",
+              "Publix Potato Salad, Macaroni Salad, or Sweet Coleslaw BOGO Free"
             ],
-            dealsUpdated: "2026-06-27",
+            dealsUpdated: "2026-08-12",
             dealsNote: "Deals change weekly and vary by store — check publix.com/savings/weekly-ad for your exact location."
           }
         ],
         entertainment: [
+          { name: "Carytown Watermelon Festival", area: "Carytown", website: "https://www.carytownwatermelonfestival.com/", typicalCost: 0, notes: "Virginia's largest single-day festival held each August — 3,000+ watermelons, 80+ musicians, beer garden, kids zone, and watermelon-themed food and goods. Free admission." },
           { name: "James River Park System", area: "Citywide", website: "https://jamesriverpark.org/", typicalCost: 0, notes: "Free hiking, swimming holes, and trails along the river." },
           { name: "First Fridays Art Walk", area: "Arts District", website: "https://firstfridaysrichmond.com/", typicalCost: 0, notes: "Free monthly gallery walk, first Friday of each month — art, music, and food." },
           { name: "Maymont Park", area: "West End", website: "https://maymont.org/", typicalCost: 0, notes: "Free admission, gardens, nature center, occasional small paid events." },
@@ -208,12 +210,12 @@ const LIVE_WITHIN_DATA = {
             typicalWeeklyCost: 55,
             notes: "Consistently rated cheapest traditional supermarket chain in the area, ~15% below average.",
             deals: [
-              "Grilling season: chicken wings, chicken breast, chicken tenders, top round roast, and pork ribs on sale",
-              "Produce: whole watermelon, raspberries, blackberries, zucchini, and summer cookout staples",
-              "Beverages: soda, lemonade, juices, and beer specials for the holiday weekend",
-              "Bakery & deli: apple pie, rolls, cupcakes, and prepared foods on sale"
+              "Late-summer produce: fresh corn, peaches, tomatoes, and berries on sale",
+              "Meat & seafood: chicken breast, steak tips, and fresh fish featured this week",
+              "Back-to-school snacks, lunchbox staples, and beverages on sale",
+              "Bakery & deli prepared foods on sale — great for quick weeknight meals"
             ],
-            dealsUpdated: "2026-06-27",
+            dealsUpdated: "2026-08-12",
             dealsNote: "Deals change weekly — check shopmarketbasket.com/weekly-flyer for your exact location."
           },
           {
@@ -224,10 +226,11 @@ const LIVE_WITHIN_DATA = {
             notes: "Similar pricing to Shaw's, slightly below Stop & Shop; rated highest for quality.",
             deals: [
               "No traditional BOGO/weekly-ad system — prices are everyday-low instead",
-              "Rotating seasonal items worth watching: Garlic Butter Irish Potato Chips, Sparkling Lemonade, Hot Honey Mustard ($1.99)",
-              "Mini Strawberry Sheet Cakes ($5.99) available through August"
+              "August seasonal hits: Guava Passion Fruit Frozen Bars, Coconut Cold Brew Concentrate",
+              "New snacks: French Onion Popcorn and Black-Eyed Pea Chips (sweet chili flavor)",
+              "Raspberry Filled Donuts in the bakery section this month"
             ],
-            dealsUpdated: "2026-06-27",
+            dealsUpdated: "2026-08-12",
             dealsNote: "Trader Joe's doesn't run weekly sales — check traderjoes.com for current seasonal items."
           },
           {
@@ -237,11 +240,11 @@ const LIVE_WITHIN_DATA = {
             typicalWeeklyCost: 70,
             notes: "Mid-range pricing; loyalty card discounts help offset cost.",
             deals: [
-              "Chicken breast $2.99/lb, salmon fillets $8.99/lb, steak BOGO",
-              "Perdue drumsticks or thighs $1.79/lb",
-              "Blueberries $1.99, loose corn 3 for $1, peppers 99 cents"
+              "Weekend Specials (Fri–Sun) typically feature the deepest discounts — check app before shopping",
+              "Back-to-school season deals on snacks, beverages, and pantry staples",
+              "Loyalty card digital coupons updated weekly — clip in-app for extra savings"
             ],
-            dealsUpdated: "2026-06-27",
+            dealsUpdated: "2026-08-12",
             dealsNote: "Deals vary by location — check stopandshop.com/savings/weekly-ad for your exact store."
           },
           { name: "Shaw's (multiple Boston locations)", area: "Citywide", website: "https://www.shaws.com/", typicalWeeklyCost: 70, notes: "Mid-range pricing, similar to Trader Joe's on most staples." }
@@ -307,9 +310,10 @@ const LIVE_WITHIN_DATA = {
             notes: "Along the Charles River; consistently good value and quality.",
             deals: [
               "No traditional BOGO/weekly-ad system — prices are everyday-low instead",
-              "Rotating seasonal items worth watching: Garlic Butter Irish Potato Chips, Sparkling Lemonade, Hot Honey Mustard ($1.99)"
+              "August seasonal hits: Guava Passion Fruit Frozen Bars, Coconut Cold Brew Concentrate",
+              "New snacks: French Onion Popcorn and Black-Eyed Pea Chips (sweet chili flavor)"
             ],
-            dealsUpdated: "2026-06-27",
+            dealsUpdated: "2026-08-12",
             dealsNote: "Trader Joe's doesn't run weekly sales — check traderjoes.com for current seasonal items."
           },
           { name: "Trader Joe's (Fresh Pond Pkwy)", area: "Fresh Pond", website: "https://www.traderjoes.com/", typicalWeeklyCost: 60, notes: "Second Cambridge location, near Fresh Pond." },
@@ -322,12 +326,12 @@ const LIVE_WITHIN_DATA = {
             typicalWeeklyCost: 50,
             notes: "One of the only true discount supermarkets accessible to Cambridge residents — lowest prices in the area, e.g. milk as low as $2.59.",
             deals: [
-              "Grilling season: chicken wings, chicken breast, chicken tenders, top round roast, and pork ribs on sale",
-              "Produce: whole watermelon, raspberries, blackberries, zucchini, and summer cookout staples",
-              "Beverages: soda, lemonade, juices, and beer specials for the holiday weekend",
-              "Bakery & deli: apple pie, rolls, cupcakes, and prepared foods on sale"
+              "Late-summer produce: fresh corn, peaches, tomatoes, and berries on sale",
+              "Meat & seafood: chicken breast, steak tips, and fresh fish featured this week",
+              "Back-to-school snacks, lunchbox staples, and beverages on sale",
+              "Bakery & deli prepared foods on sale — great for quick weeknight meals"
             ],
-            dealsUpdated: "2026-06-27",
+            dealsUpdated: "2026-08-12",
             dealsNote: "Deals change weekly — check shopmarketbasket.com/weekly-flyer for your exact location."
           }
         ],
@@ -373,12 +377,12 @@ const LIVE_WITHIN_DATA = {
             typicalWeeklyCost: 50,
             notes: "Lowest prices in the Cambridge/Somerville area — 'More for Your Dollar.'",
             deals: [
-              "Grilling season: chicken wings, chicken breast, chicken tenders, top round roast, and pork ribs on sale",
-              "Produce: whole watermelon, raspberries, blackberries, zucchini, and summer cookout staples",
-              "Beverages: soda, lemonade, juices, and beer specials for the holiday weekend",
-              "Bakery & deli: apple pie, rolls, cupcakes, and prepared foods on sale"
+              "Late-summer produce: fresh corn, peaches, tomatoes, and berries on sale",
+              "Meat & seafood: chicken breast, steak tips, and fresh fish featured this week",
+              "Back-to-school snacks, lunchbox staples, and beverages on sale",
+              "Bakery & deli prepared foods on sale — great for quick weeknight meals"
             ],
-            dealsUpdated: "2026-06-27",
+            dealsUpdated: "2026-08-12",
             dealsNote: "Deals change weekly — check shopmarketbasket.com/weekly-flyer for your exact location."
           },
           {
@@ -389,9 +393,10 @@ const LIVE_WITHIN_DATA = {
             notes: "Good value and quality, especially on prepared foods and snacks.",
             deals: [
               "No traditional BOGO/weekly-ad system — prices are everyday-low instead",
-              "Rotating seasonal items worth watching: Garlic Butter Irish Potato Chips, Sparkling Lemonade, Hot Honey Mustard ($1.99)"
+              "August seasonal hits: Guava Passion Fruit Frozen Bars, Coconut Cold Brew Concentrate",
+              "New snacks: French Onion Popcorn and Black-Eyed Pea Chips (sweet chili flavor)"
             ],
-            dealsUpdated: "2026-06-27",
+            dealsUpdated: "2026-08-12",
             dealsNote: "Trader Joe's doesn't run weekly sales — check traderjoes.com for current seasonal items."
           },
           { name: "Star Market (Beacon St)", area: "Beacon Street", website: "https://www.starmarket.com/", typicalWeeklyCost: 65, notes: "Mid-range pricing, convenient for Davis/Porter Square area." }
